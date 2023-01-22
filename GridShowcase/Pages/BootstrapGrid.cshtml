@@ -1,0 +1,75 @@
+﻿@page
+@model BootstrapGrid
+
+@{
+    ViewData["Title"] = "Bootstrap Grid";
+}
+
+<h1 class="text-center mt-3">Bootstrap Grid - Organizing in 12 units</h1>
+
+<strong class="d-block">explicit col size definition</strong>
+<div class="row mx-0 bg-light mb-3">
+    <div class="col-4">
+        <div class="bg-success text-dark p-3">Block 1</div>
+    </div>
+    <div class="col-4">
+        <div class="bg-info text-dark p-3">Block 2</div>
+    </div>
+    <div class="col-4">
+        <div class="bg-warning text-dark p-3">Block 3</div>
+    </div>
+</div>
+
+<strong class="d-block">implicit col size definition</strong>
+<div class="row mx-0 bg-light mb-3">
+    <div class="col">
+        <div class="bg-success text-dark p-3">Block 1</div>
+    </div>
+    <div class="col">
+        <div class="bg-info text-dark p-3">Block 2</div>
+    </div>
+    <div class="col">
+        <div class="bg-warning text-dark p-3">Block 3</div>
+    </div>
+    <div class="col">
+        <div class="bg-primary text-dark p-3">Block 4</div>
+    </div>
+</div>
+
+<strong class="d-block">mixed col size defintion</strong>
+<div class="row mx-0 bg-light mb-3">
+    <div class="col-12">
+        <div class="bg-success text-dark p-3">Block 1</div>
+    </div>
+    <div class="col-6">
+        <div class="bg-info text-dark p-3">Block 2</div>
+    </div>
+    <div class="col-2">
+        <div class="bg-warning text-dark p-3">Block 3</div>
+    </div>
+    <div class="col">
+        <div class="bg-primary text-dark p-3">Block 4</div>
+    </div>
+</div>
+
+<strong class="d-block">auto wrap when max col size is reached</strong>
+<div class="row mx-0 bg-light mb-3">
+    <div class="col-4">
+        <div class="bg-success text-dark p-3">Block 1</div>
+    </div>
+    <div class="col-4">
+        <div class="bg-info text-dark p-3">Block 2</div>
+    </div>
+    <div class="col-4">
+        <div class="bg-warning text-dark p-3">Block 3</div>
+    </div>
+    <div class="col-4">
+        <div class="bg-primary text-dark p-3">Block 4</div>
+    </div>
+    <div class="col-4">
+        <div class="bg-danger text-dark p-3">Block 5</div>
+    </div>
+    <div class="col-4">
+        <div class="bg-secondary text-dark p-3">Block 6</div>
+    </div>
+</div>

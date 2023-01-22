@@ -1,0 +1,38 @@
+﻿@page
+@model GridShowcase.Pages.CssGrid
+
+@{
+    ViewData["Title"] = "CSS Grid";
+}
+
+<h1 class="text-center mt-3">CSS Grid - dynamic grid creation</h1>
+
+<div class="d-flex justify-content-center p-3 mb-4">
+    <form class="w-25">
+        <div class="input-group mb-2">
+            <input class="form-control" type="number" id="grid-size-input" value="6" min="1" step="1"/>
+            <label class="input-group-text">Columns</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="is-fraction-radio" name="cell-size-picker" checked/>
+            <label class="form-check-label">fraction</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="is-absolute-radio" name="cell-size-picker"/>
+            <label class="form-check-label">absolute</label>
+        </div>
+        <div class="d-flex mt-2">
+            <button type="button" class="btn btn-success me-2" id="add-block-btn">Add block</button>
+            <button type="button" class="btn btn-danger me-2" id="remove-block-btn">Remove block</button>
+        </div>
+    </form>
+</div>
+
+<div id="custom-grid">
+    <div class="bg-success text-dark p-3">Block 1</div>
+    <div class="bg-info text-dark p-3">Block 2</div>
+    <div class="bg-warning text-dark p-3">Block 3</div>
+    <div class="bg-primary text-dark p-3">Block 4</div>
+    <div class="bg-danger text-dark p-3">Block 5</div>
+    <div class="bg-secondary text-dark p-3">Block 6</div>
+</div>

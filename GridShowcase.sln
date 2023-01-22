@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridShowcase", "GridShowcase\GridShowcase.csproj", "{44AD5E93-6BA3-40F1-9408-3A21FF5271AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44AD5E93-6BA3-40F1-9408-3A21FF5271AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44AD5E93-6BA3-40F1-9408-3A21FF5271AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44AD5E93-6BA3-40F1-9408-3A21FF5271AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44AD5E93-6BA3-40F1-9408-3A21FF5271AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
