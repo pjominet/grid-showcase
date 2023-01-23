@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>@ViewData["Title"] - Showcase</title>
+    <title>Showcase- @ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/lib/css/bootstrap.icons.css">
     <link rel="stylesheet" href="~/styles/common.css" asp-append-version="true">
@@ -12,7 +12,9 @@
 <div class="grid-layout">
     <header class="navbar navbar-expand-lg bg-body-secondary">
         <div class="container-fluid mx-5">
-            <a asp-page="/" class="navbar-brand h1 mb-0">Are you gridding me?!</a>
+            <a asp-page="/Index" class="navbar-brand h1 mb-0">
+                <i class="bi-grid-3x3 me-2"></i>Showcase
+            </a>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <button class="btn btn-link nav-link dropdown-toggle"
@@ -38,6 +40,9 @@
     <nav class="bg-body-secondary">
         <ul class="nav nav-pills flex-column mb-auto align-items-start">
             <li class="nav-item">
+                <a class="nav-link fw-bold" asp-page="/Index"><i class="bi-chevron-right me-2"></i>Intro</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link fw-bold" asp-page="/Flex"><i class="bi-chevron-right me-2"></i>Flex</a>
             </li>
             <li class="nav-item">
@@ -47,7 +52,7 @@
                 <a class="nav-link fw-bold" asp-page="CssGrid"><i class="bi-chevron-right me-2"></i>CSS Grid</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fw-bold" asp-page="Guide"><i class="bi-chevron-right me-2"></i>Guide</a>
+                <a class="nav-link fw-bold" asp-page="Guide"><i class="bi-chevron-right me-2"></i>Full Guide</a>
             </li>
         </ul>
     </nav>

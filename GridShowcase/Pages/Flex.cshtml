@@ -4,7 +4,7 @@
     ViewData["Title"] = "Flex";
 }
 
-<h1 class="text-center mt-3">Flex postioning</h1>
+<h1 class="text-center mt-3">How to flex</h1>
 
 <ul class="nav nav-tabs">
     <li class="nav-item">
@@ -19,63 +19,61 @@
 </ul>
 
 <div class="tab-content content-stretch">
-    <section id="case1" class="tab-pane active content-stretch">
+    <section id="case1" class="tab-pane active content-stretch p-3">
         <div class="d-flex justify-content-center align-items-center bg-light" style="height: 50%">
             <div class="bg-success text-dark p-3">
                 I'm always centered relative to my parent
             </div>
         </div>
     </section>
-    <section id="case2" class="tab-pane fade content-stretch">
-        <strong class="d-block mt-3">flex-row</strong>
-        <div class="d-flex bg-light" style="height: 300px">
+    <section id="case2" class="tab-pane fade content-stretch p-3">
+        <strong class="d-block mb-3">flex-row</strong>
+        <div class="d-flex bg-light mb-3" style="height: 300px">
             <div class="bg-success p-3 text-dark d-block">Block 1</div>
             <div class="bg-info p-3 text-dark d-inline-block">Block 2</div>
             <span class="bg-warning p-3 text-dark d-inline">Block 3</span>
         </div>
 
-        <strong class="d-block mt-3">flex-column</strong>
-        <div class="d-flex flex-column bg-light" style="height: 300px">
+        <strong class="d-block mb-3">flex-column</strong>
+        <div class="d-flex flex-column bg-light mb-3" style="height: 300px">
             <div class="bg-success p-3 text-dark d-block">Block 1</div>
             <div class="bg-info p-3 text-dark d-inline-block">Block 2</div>
             <span class="bg-warning p-3 text-dark d-inline">Block 3</span>
         </div>
 
-        <a class="btn btn-primary mt-3 mb-2" data-bs-toggle="collapse", href="#magic-margin">show magic margin</a>
-        <div id="magic-margin" class="collapse">
-            <div class="d-flex bg-light mb-2" style="height: 150px">
-                <div class="bg-success p-3 text-dark d-block me-auto">Block 1</div>
-                <div class="bg-info p-3 text-dark d-block ms-auto">Block 2</div>
-            </div>
-            <div class="d-flex flex-column bg-light mb-2" style="height: 150px">
-                <div class="bg-success p-3 text-dark d-block me-auto">Block 1</div>
-                <div class="bg-info p-3 text-dark d-block ms-auto">Block 2</div>
-            </div>
+        <strong class="d-block mb-3">Applying some margin magic</strong>
+        <div class="d-flex bg-light mb-3" style="height: 150px">
+            <div class="bg-success p-3 text-dark d-block me-auto">Block 1</div>
+            <div class="bg-info p-3 text-dark d-block ms-auto">Block 2</div>
+        </div>
+        <div class="d-flex flex-column bg-light mb-3" style="height: 150px">
+            <div class="bg-success p-3 text-dark d-block me-auto">Block 1</div>
+            <div class="bg-info p-3 text-dark d-block ms-auto">Block 2</div>
         </div>
     </section>
-    <section id="case3" class="tab-pane fade content-stretch">
-        <strong class="d-block">content between</strong>
+    <section id="case3" class="tab-pane fade content-stretch p-3">
+        <strong class="d-block mb-3">content between</strong>
         <div class="d-flex justify-content-between bg-light mb-3">
             <div class="bg-success p-3 text-dark">Block 1</div>
             <div class="bg-info p-3 text-dark">Block 2</div>
             <div class="bg-warning p-3 text-dark">Block 3</div>
         </div>
 
-        <strong class="d-block">content around</strong>
+        <strong class="d-block mb-3">content around</strong>
         <div class="d-flex justify-content-around bg-light mb-3">
             <div class="bg-success p-3 text-dark">Block 1</div>
             <div class="bg-info p-3 text-dark">Block 2</div>
             <div class="bg-warning p-3 text-dark">Block 3</div>
         </div>
 
-        <strong class="d-block">content evenly</strong>
+        <strong class="d-block mb-3">content evenly</strong>
         <div class="d-flex justify-content-evenly bg-light mb-3">
             <div class="bg-success p-3 text-dark">Block 1</div>
             <div class="bg-info p-3 text-dark">Block 2</div>
             <div class="bg-warning p-3 text-dark">Block 3</div>
         </div>
 
-        <strong class="d-block">content center</strong>
+        <strong class="d-block mb-3">content center</strong>
         <div class="d-flex justify-content-center bg-light mb-3">
             <div class="bg-success p-3 text-dark">Block 1</div>
             <div class="bg-info p-3 text-dark">Block 2</div>

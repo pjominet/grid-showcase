@@ -1,24 +1,83 @@
 ﻿@page
 @model GridShowcase.Pages.Index
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Intro";
 }
 
-<div class="text-center mt-3">
-    <h1 class="mb-5">Are you gridding me?!</h1>
+<section class="mt-3">
+    <h1 class="mb-5 text-center">Are you gridding me?!</h1>
 
-    <h2>Why flexbox?</h2>
-    <p class="mb-3">
+    <div class="w-50 mx-auto">
+        <h2 class="text-center mb-3">Why flexbox?</h2>
+        <article class="row mb-3">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Major Advantages</h3>
+                    </div>
+                    <div class="card-body" style="min-height: 100px">
+                        <p>Easiest the learn & understand, very straight foward even without Bootstrap helper classes. Best for relative positioning of elements.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Major Drawbacks</h3>
+                    </div>
+                    <div class="card-body" style="min-height: 100px">
+                        <p>Not ideal for aligning in multiple different directions, especially when the direction changes a lot and complex layouts need lots of media queries.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
 
-    </p>
+        <h2 class="text-center mb-3">Why bootstrap/framework grid?</h2>
+        <article class="row mb-3">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Major Advantages</h3>
+                    </div>
+                    <div class="card-body" style="min-height: 100px">
+                        <p>Very simple & understandable HTML structure and allows for more simple mutli-directional layouting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Major Drawbacks</h3>
+                    </div>
+                    <div class="card-body" style="min-height: 100px">
+                        <p>Limited to 12 units, can be tricky when used with an odd number of elements.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
 
-    <h2>Why bootstrap/framework grid?</h2>
-    <p class="mb-3">
-
-    </p>
-
-    <h2>Why css grid?</h2>
-    <p class="mb-3">
-
-    </p>
-</div>
+        <h2 class="text-center mb-3">Why css grid?</h2>
+        <article class="row mb-3">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Major Advantages</h3>
+                    </div>
+                    <div class="card-body" style="min-height: 100px">
+                        <p>The most flexible solution to create complex layout with very few instructions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Major Drawbacks</h3>
+                    </div>
+                    <div class="card-body" style="min-height: 100px">
+                        <p>Can become very complex to understand, as there are a lot of different options to manipulate a CSS grid.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
